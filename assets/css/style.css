@@ -42,30 +42,6 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 1.55vw;
 }
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background: #fce138;
-    width: 100%;
-    padding: 40px 35px;
-}
-
-    footer h2 {
-        color: #024e76;
-        font-size: 30px;
-        margin: 0;
-    }
-
-    footer div {
-        line-height: 1.5;
-        text-align: right;
-    }
-
-    footer a {
-        color:#024e76
-    }
     section {
         padding: 60px;
     }
@@ -136,6 +112,16 @@ footer {
         margin: 0 auto;
         text-align: center;
     }
+    .step {
+        margin: 50px auto;
+        padding-bottom: 50px;
+        width: 80%;
+        border-bottom: 1px solid #39a6b2;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
     .steps {
         background: #fce138;
     }
@@ -145,7 +131,7 @@ footer {
     .section-title {
         font-size: 55px;
         border-bottom: 3px solid;
-        color:#024e76
+        color:#024e76;
         padding-bottom: 20px;
         text-align: center;
         margin: 0 auto 35px auto;
@@ -159,29 +145,39 @@ footer {
     .secondary-border {
         border-color: #39a6b2;
     }
-    .steps div {
-        margin-bottom: 80px;
-    }
 
-    .steps img {
-        width: 15%;
-        margin: 10px 0;
-    }
-
-    .steps h3 {
+    .step h3 {
+        flex: 1 30%;
         color: #024e76;
         font-size: 46px;
-        margin-top: 10px;
     }
-    .steps p {
+    .step-info {
+        flex: 2 70%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .step-text {
+        flex: 12;
+    }
+
+    .step-text p {
         color: #39a6b2;
-        font-size: 23px;
+        font-size: 18px;
     }
-    .steps span {
-        font-size: 38px;
+    .step-text h4 {
+        font-size: 26px;
+        line-height: 1.5;
+        color: #024e76;
     }
-    .trainers {
+    .step-img img {
+        max-width: 100%;
     }
+    .step-img {
+        flex: 1 12%;
+        margin-right: 20px;
+    }
+
     .trainer {
         width: 900px;
         margin:0 auto 30px auto;
@@ -253,3 +249,4 @@ footer {
     .flex-row {
         display: flex;
     }
+    
